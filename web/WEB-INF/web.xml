@@ -5,6 +5,14 @@
         <servlet-class>Controlador.Listar</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>upload</servlet-name>
+        <servlet-class>com.hmkcode.FileUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>Sesion</servlet-name>
         <servlet-class>Controlador.Sesion</servlet-class>
     </servlet>
@@ -14,7 +22,7 @@
     </servlet>
     <servlet>
         <servlet-name>Foto</servlet-name>
-        <servlet-class>Controlador.Foto</servlet-class>
+        <servlet-class>com.hmkcode.FileUploadServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ListarPorArea</servlet-name>

@@ -6,7 +6,8 @@ $(document).ready(function () {
     document.getElementById("h").style.display = "none";
     document.getElementById("i").style.display = "none";
     document.getElementById("links").style.display = "none";
-    document.getElementById("perfil").style.display = "none";
+    document.getElementById("perfil").style.display = "none";    
+    document.getElementById("Fotico").style.display = "none";
 });
 function getUser() {
     $.ajax({
@@ -147,6 +148,11 @@ function mostrarPerfil() {
 
 
 
+}
+function activeChangeImage(){
+    
+    document.getElementById("Fotico").style.display = "block";
+    
 }
 
 
