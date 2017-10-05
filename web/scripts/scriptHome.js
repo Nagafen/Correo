@@ -142,6 +142,7 @@ function mostrarPerfil() {
         document.getElementById('3').innerHTML = response.colegio;
         document.getElementById('4').innerHTML = response.tipo;
         document.getElementById('5').innerHTML = response.cursoArea;
+        alert(response.imagenUsuario);
         document.getElementById('ima').src = response.imagenUsuario;
 
     });

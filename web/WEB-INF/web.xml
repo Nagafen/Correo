@@ -5,24 +5,12 @@
         <servlet-class>Controlador.Listar</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>upload</servlet-name>
-        <servlet-class>com.hmkcode.FileUploadServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>upload</servlet-name>
-        <url-pattern>/upload</url-pattern>
-    </servlet-mapping>
-    <servlet>
         <servlet-name>Sesion</servlet-name>
         <servlet-class>Controlador.Sesion</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CloseSesion</servlet-name>
         <servlet-class>Controlador.CloseSesion</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Foto</servlet-name>
-        <servlet-class>com.hmkcode.FileUploadServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ListarPorArea</servlet-name>
@@ -32,6 +20,14 @@
         <servlet-name>BuscarElementoPorNombre</servlet-name>
         <servlet-class>Controlador.BuscarElementoPorNombre</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>upload</servlet-name>
+        <servlet-class>com.hmkcode.FileUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Listar</servlet-name>
         <url-pattern>/Listar</url-pattern>
@@ -59,10 +55,6 @@
     <servlet-mapping>
         <servlet-name>CloseSesion</servlet-name>
         <url-pattern>/CloseSesion</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Foto</servlet-name>
-        <url-pattern>/Foto</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListarPorArea</servlet-name>
