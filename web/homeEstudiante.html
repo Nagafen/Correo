@@ -16,6 +16,10 @@
             #imageUser{
                 width: 50px;
                 height: 50px;
+                border-radius: 200px 200px 200px 200px;
+                -moz-border-radius: 200px 200px 200px 200px;
+                -webkit-border-radius: 200px 200px 200px 200px;
+                border: 2px solid #faf5fa;
             }
         </style>
     </head>
@@ -38,7 +42,7 @@
                         <li><p id="col"></p></li>
                         <li><p id="curso"></p></li>
                         <li><a onclick="closeSesion();" title="Cerrar Sesión"><i class="fa fa-lg fa-power-off"></i></a></li>
-                        <li><a href="#"  title="Mi Perfil"><img alt="NotFound" id="imageUser" src=""/></a></li>
+                        <li><a onclick="mostrarPerfil();" href="#"  title="Mi Perfil"><img alt="NotFound" id="imageUser" src=""/></a></li>
 
                     </ul>
                 </div>
@@ -56,7 +60,7 @@
             <div class="wrapper row2">
                 <nav id="mainav" class="hoc clear"> 
                     <ul class="clear">
-                        <li class="active"><a href="index.html">Home</a></li>                       
+                        <li class="active"><a href="homeEstudiante.html">Home</a></li>                       
                         <li><a href="#" onclick="showListados();">Inventario Disponible</a></li>
                         <li><a href="#">Reservas</a></li>
                         <li><a href="#">Historial</a></li>
@@ -174,7 +178,7 @@
             <div class="wrapper row2">
                 <nav id="mainav" class="hoc clear"> 
                     <ul class="clear">
-                        <li class="active"><a href="index.html">Home</a></li>                       
+                        <li class="active"><a href="homeEstudiante.html">Home</a></li>                       
                         <li><a href="#" onclick="showListados();">Inventario Disponible</a></li>
                         <li><a href="#">Reservas</a></li>
                         <li><a href="#">Historial</a></li>
@@ -185,18 +189,18 @@
             </div>
             <div class="wrapper overlay">
                 <div id="breadcrumb" class="hoc clear"> 
-                    <h1>Listados</h1>
+                    <h1 style="font-size: 62px">Listados</h1>
                 </div>
             </div>
 
         </div>
-        
+
         <div id="links"  class="wrapper row3">
             <br>
             <br>
             <br>
             <a class="btn" href="#" onclick="obtenerData();">Listado Completo</a>
-            <a class="btn" href="#">Listado Por Área</a>
+            <a class="btn" href="#" onclick="selectArea();">Listado Por Área</a>
             <br>
             <br>
             <br>
@@ -204,7 +208,7 @@
         <div id="f" class="wrapper row3">
             <main class="hoc container clear"> 
                 <div class="content">
-                    
+
                     <h1>Listado Completo</h1>                    
                     <div class="scrollable">
                         <table id="tabla1">
@@ -219,7 +223,7 @@
                         </table>
                         <table id="tabla2">                                                      
                         </table>
-                        
+
                     </div>
 
                 </div>
@@ -243,12 +247,92 @@
                         </table>
                         <table id="tabla4">                                                      
                         </table>
-                        
+
                     </div>
 
                 </div>
 
             </main>
+        </div>
+        <div id="h" class="wrapper row3">
+            <h1>SELECCIONA EL ÁREA</h1>
+            <select onchange="check();" style="margin: 0 auto" name="area" id="test">
+                <option>--Selecciona--</option>
+                <option>Enciclopedia</option>
+                <option>Diccionarios</option>
+                <option>Español</option>
+                <option>Matematicas</option>
+                <option>Fisica</option>
+                <option>Quimica</option>
+                <option>Sociales</option>
+                <option>Ingles</option>
+                <option>Ciencias&nbsp;&nbsp;Naturales</option>
+                <option>Preescolar</option>
+                <option>Filosofia</option>
+                <option>Religion</option>
+                <option>Etica y Valores</option>
+                <option>Informatica</option>
+                <option>Atlas</option>
+                <option>Salud y Educacion Sexual</option>
+                <option>Dibujo Tecnico y Artistica</option>
+                <option>Libros Institucionales</option>
+                <option>Material Didactico</option>
+                <option>Videos - DVD- CD-ROOM</option>
+                <option>Equipo</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <!--Mi perfil-->
+        <div id="i" class="bgded" style="background-image:url('images/demo/backgrounds/img2.jpg');"> 
+            <div class="wrapper row2">
+                <nav id="mainav" class="hoc clear"> 
+                    <ul class="clear">
+                        <li class="active"><a href="homeEstudiante.html">Home</a></li>                       
+                        <li><a href="#" onclick="showListados();">Inventario Disponible</a></li>
+                        <li><a href="#">Reservas</a></li>
+                        <li><a href="#">Historial</a></li>
+                        <li><a href="#">Busquedas</a></li>
+                        <li><a href="#">Convenios</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper overlay">
+                <div id="breadcrumb" class="hoc clear"> 
+                    <h1 style="font-size: 62px">Mi Perfil</h1>
+                </div>
+            </div>
+
+        </div>
+        <div id="perfil"  class="wrapper row3">
+            <table>
+                <thead>
+                    <tr>                                             
+                        <td>ID: </td>
+                        <td id="1"></td>
+                    </tr>
+                    <tr>                                             
+                        <td>Nombre: </td>
+                        <td id="2"></td>
+                    </tr>
+
+                    <tr>                                             
+                        <td>Colegio: </td>
+                        <td id="3"></td>
+                    </tr>
+                    <tr>                                             
+                        <td>Tipo de Usuario: </td>
+                        <td id="4"></td>
+                    </tr>
+
+                    <tr>                                             
+                        <td>Curso: </td>
+                        <td id="5"></td>
+                    </tr> 
+                </thead>                            
+            </table>
         </div>
 
         <!--Footer-->

@@ -16,6 +16,10 @@
         <servlet-name>Foto</servlet-name>
         <servlet-class>Controlador.Foto</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListarPorArea</servlet-name>
+        <servlet-class>Controlador.ListarPorArea</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Listar</servlet-name>
         <url-pattern>/Listar</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>Foto</servlet-name>
         <url-pattern>/Foto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarPorArea</servlet-name>
+        <url-pattern>/ListarPorArea</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
