@@ -52,101 +52,73 @@
 
             </header>
         </div>
-        <div class="bgded" style="background-image:url('images/demo/backgrounds/img2.jpg');">
+        <div id="a" class="bgded" style="background-image:url('images/demo/backgrounds/img2.jpg');">
             <div class="wrapper row2">
                 <nav id="mainav" class="hoc clear"> 
                     <ul class="clear">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a class="drop" href="#">Pages</a>
-                            <ul>
-                                <li><a href="pages/gallery.html">Gallery</a></li>
-                                <li><a href="pages/full-width.html">Full Width</a></li>
-                                <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-                                <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-                                <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="drop" href="#">Dropdown</a>
-                            <ul>
-                                <li><a href="#">Level 2</a></li>
-                                <li><a class="drop" href="#">Level 2 + Drop</a>
-                                    <ul>
-                                        <li><a href="#">Level 3</a></li>
-                                        <li><a href="#">Level 3</a></li>
-                                        <li><a href="#">Level 3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Level 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Link Text</a></li>
-                        <li><a href="#">Link Text</a></li>
-                        <li><a href="#">Link Text</a></li>
-                        <li><a href="#">Long Link Text</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>                       
+                        <li><a href="#" onclick="showListados();">Inventario Disponible</a></li>
+                        <li><a href="#">Reservas</a></li>
+                        <li><a href="#">Historial</a></li>
+                        <li><a href="#">Busquedas</a></li>
+                        <li><a href="#">Convenios</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="wrapper overlay">
                 <article id="pageintro" class="hoc clear">
                     <h2 class="heading">Library-Soft para estudiantes y docentes</h2>
-                    <p>Verifica tus actividad en Library-Soft .</p>
+                    <p>Verifica tu actividad en Library-Soft .</p>
                     <footer><a class="btn" href="#">Bibliotecas</a></footer>
                 </article>
             </div>
         </div>
-        <div class="wrapper row3">
+        <div id="b" class="wrapper row3">
             <section class="hoc container clear" id="beneficios">
                 <div class="sectiontitle">
-                    <h6 class="heading">Nuestros beneficios</h6>
-                    <p>Conoce las ventajas de pertenecer a esta red</p>
+                    <h6 class="heading">Library-Soft</h6>
                 </div>
                 <ul class="nospace group elements">
                     <li class="one_third first">
                         <article><a href="#"><i class="fa fa-eye"></i></a>
-                            <h6 class="heading">Manejo y control de inventario</h6>
-                            <p>Controla tu inventario para saber lo que tienes y poder administrarlo [&hellip;]</p>
-                            <footer><a href="#">View Details &raquo;</a></footer>
+                            <h6 class="heading">Inventario disponible</h6>
+                            <p>Revisa el inventario disponible al que puedes acceder [&hellip;]</p>
+                            <footer><a href="listados.html">Go &raquo;</a></footer>
                         </article>
                     </li>
                     <li class="one_third">
                         <article><a href="#"><i class="fa fa-calendar"></i></a>
-                            <h6 class="heading">Reserva de libros para los usuarios</h6>
-                            <p>Reserva un libro para tener prioridad sobre el prestamo [&hellip;]</p>
-                            <footer><a href="#">Ver Detalles &raquo;</a></footer>
+                            <h6 class="heading">Reserva libros o elementos</h6>
+                            <p>Reserva un libro o elemento para poder tener prioridad sobre el  [&hellip;]</p>
+                            <footer><a href="#">Go &raquo;</a></footer>
                         </article>
                     </li>
                     <li class="one_third">
-                        <article><a href="#"><i class="fa fa-bar-chart"></i></a>
-                            <h6 class="heading">Estadisticas</h6>
-                            <p>Mostramos estadiscticas útiles que plasman como se está moviendo el sistema [&hellip;]</p>
-                            <footer><a href="#">Ver Detalles &raquo;</a></footer>
+                        <article><a href="#"><i class="fa fa-history"></i></a>
+                            <h6 class="heading">Historial</h6>
+                            <p>Revisa tu historial de prestamos activos, prestamos terminados y devoluciones [&hellip;]</p>
+                            <footer><a href="#">Go &raquo;</a></footer>
                         </article>
                     </li>
                     <li class="one_third first">
                         <article><a href="#"><i class="fa fa-search"></i></a>
-                            <h6 class="heading">Busquedas inteligentes</h6>
-                            <p>Busca un libro o un elemento dentro de tu inventario, consulta disponibilidad y mucho más [&hellip;]</p>
-                            <footer><a href="#">Ver Detalles &raquo;</a></footer>
-                        </article>
-                    </li>
-                    <li class="one_third">
-                        <article><a href="#"><i class="fa fa-bell-o"></i></a>
-                            <h6 class="heading">Control de paz y salvo</h6>
-                            <p>Te mostramos la lista de estudiantes con prestamos pendientes [&hellip;]</p>
-                            <footer><a href="#">Ver Detalles &raquo;</a></footer>
+                            <h6 class="heading">Busquedas de libros o elementos</h6>
+                            <p>Busca un libro o un elemento dentro del inventario, consulta disponibilidad y mucho más [&hellip;]</p>
+                            <footer><a href="#">Go &raquo;</a></footer>
                         </article>
                     </li>
                     <li class="one_third">
                         <article><a href="#"><i class="fa fa-link"></i></a>
-                            <h6 class="heading">Enlace con otras instituciones</h6>
+                            <h6 class="heading">Revisa los convenios de tu colegio</h6>
                             <p>Accede a otros libros que no posee tu institución gracias a los enlaces y convenios [&hellip;]</p>
-                            <footer><a href="#">Ver Detalles &raquo;</a></footer>
+                            <footer><a href="#">Go &raquo;</a></footer>
                         </article>
                     </li>
+
                 </ul>
             </section>
         </div>
-        <div class="wrapper bgded overlay light" style="background-image:url('images/demo/backgrounds/black.jpg');">
+        <div id="c" class="wrapper bgded overlay light" style="background-image:url('images/demo/backgrounds/black.jpg');">
             <figure class="hoc clear">
                 <ul class="nospace group logos">
                     <li class="one_quarter first">
@@ -164,7 +136,7 @@
                 </ul>
             </figure>
         </div>
-        <div class="wrapper row4">
+        <div id="d" class="wrapper row4">
             <footer id="footer" class="hoc clear">
                 <div class="one_third first" style="text-align: center">
                     <h6 class="heading">Visita nuestras redes sociales</h6>
@@ -197,12 +169,97 @@
                 </div>
             </footer>
         </div>
+        <!--Cuerpo de listados-->
+        <div id="e" class="bgded" style="background-image:url('images/demo/backgrounds/img2.jpg');"> 
+            <div class="wrapper row2">
+                <nav id="mainav" class="hoc clear"> 
+                    <ul class="clear">
+                        <li class="active"><a href="index.html">Home</a></li>                       
+                        <li><a href="#" onclick="showListados();">Inventario Disponible</a></li>
+                        <li><a href="#">Reservas</a></li>
+                        <li><a href="#">Historial</a></li>
+                        <li><a href="#">Busquedas</a></li>
+                        <li><a href="#">Convenios</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper overlay">
+                <div id="breadcrumb" class="hoc clear"> 
+                    <h1>Listados</h1>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="links"  class="wrapper row3">
+            <br>
+            <br>
+            <br>
+            <a class="btn" href="#" onclick="obtenerData();">Listado Completo</a>
+            <a class="btn" href="#">Listado Por Área</a>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id="f" class="wrapper row3">
+            <main class="hoc container clear"> 
+                <div class="content">
+                    
+                    <h1>Listado Completo</h1>                    
+                    <div class="scrollable">
+                        <table id="tabla1">
+                            <thead>
+                                <tr>                                             
+                                    <th style="width:400px">Nombre</th>                    
+                                    <th style="width:200px">Cantidad Disponible</th>  
+                                    <th style="width:200px">Ubicacion</th>
+                                    <th style="width:200px">Area</th>
+                                </tr> 
+                            </thead>                            
+                        </table>
+                        <table id="tabla2">                                                      
+                        </table>
+                        
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+        <div id="g" class="wrapper row3">
+            <main class="hoc container clear"> 
+                <div class="content">                    
+                    <h1>Listado Por Área</h1>                    
+                    <div class="scrollable">
+                        <table id="tabla3">
+                            <thead>
+                                <tr>                                             
+                                    <th style="width:400px">Nombre</th>                    
+                                    <th style="width:200px">Cantidad Disponible</th>  
+                                    <th style="width:200px">Ubicacion</th>
+                                    <th style="width:200px">Area</th>
+                                </tr> 
+                            </thead>                            
+                        </table>
+                        <table id="tabla4">                                                      
+                        </table>
+                        
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+
+        <!--Footer-->
         <div class="wrapper row5">
             <div id="copyright" class="hoc clear">
                 <p>LibrarySoft &copy; 2017 - Todos los derechos reservados - <a href="#">www.librarysoft.com.co</a></p>
             </div>
         </div>
         <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+
 
 
 
