@@ -20,6 +20,10 @@
         <servlet-name>ListarPorArea</servlet-name>
         <servlet-class>Controlador.ListarPorArea</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BuscarElementoPorNombre</servlet-name>
+        <servlet-class>Controlador.BuscarElementoPorNombre</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Listar</servlet-name>
         <url-pattern>/Listar</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>ListarPorArea</servlet-name>
         <url-pattern>/ListarPorArea</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BuscarElementoPorNombre</servlet-name>
+        <url-pattern>/BuscarElementoPorNombre</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

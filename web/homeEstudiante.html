@@ -21,6 +21,10 @@
                 -webkit-border-radius: 200px 200px 200px 200px;
                 border: 2px solid #faf5fa;
             }
+            #ima{
+                width: 150px;
+                height: 150px;
+            }
         </style>
     </head>
 
@@ -64,7 +68,7 @@
                         <li><a href="#" onclick="showListados();">Inventario Disponible</a></li>
                         <li><a href="#">Reservas</a></li>
                         <li><a href="#">Historial</a></li>
-                        <li><a href="#">Busquedas</a></li>
+                        <li><a href="Busquedas.html">Busquedas</a></li>
                         <li><a href="#">Convenios</a></li>
                     </ul>
                 </nav>
@@ -266,7 +270,7 @@
                 <option>Quimica</option>
                 <option>Sociales</option>
                 <option>Ingles</option>
-                <option>Ciencias&nbsp;&nbsp;Naturales</option>
+                <option>Ciencias Naturales</option>
                 <option>Preescolar</option>
                 <option>Filosofia</option>
                 <option>Religion</option>
@@ -285,6 +289,8 @@
             <br>
             <br>
         </div>
+        
+        
         <!--Mi perfil-->
         <div id="i" class="bgded" style="background-image:url('images/demo/backgrounds/img2.jpg');"> 
             <div class="wrapper row2">
@@ -308,7 +314,15 @@
         </div>
         <div id="perfil"  class="wrapper row3">
             <table>
-                <thead>
+                <thead>                    
+                    <tr>  
+                        <td><img alt="NotFound" id="ima" src=""/></td>
+                    </tr>
+
+                </thead>                            
+            </table>
+            <table>
+                <thead>                   
                     <tr>                                             
                         <td>ID: </td>
                         <td id="1"></td>
@@ -333,6 +347,12 @@
                     </tr> 
                 </thead>                            
             </table>
+            <br>
+            <br>
+            <a class="btn" href="#" onclick="">Cambiar Clave</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="btn" href="#" onclick="">Cambiar Imagen de Usuario</a>
+            <br>
+            <br>
         </div>
 
         <!--Footer-->

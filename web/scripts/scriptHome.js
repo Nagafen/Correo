@@ -47,6 +47,7 @@ function showListados() {
     $("#d").remove();
     document.getElementById("e").style.display = "block";
     document.getElementById("links").style.display = "block";
+    document.getElementById("perfil").style.display = "none";
 }
 function obtenerData() {
     document.getElementById("f").style.display = "block";
@@ -126,20 +127,21 @@ function mostrarPerfil() {
     }).done(function (response) {
         document.getElementById("perfil").style.display = "block";
         document.getElementById("i").style.display = "block";
+        document.getElementById("f").style.display = "none";
+        document.getElementById("g").style.display = "none";
+        document.getElementById("e").style.display = "none";
+        document.getElementById("h").style.display = "none";
+        document.getElementById("links").style.display = "none";
         $("#a").remove();
         $("#b").remove();
         $("#c").remove();
-        $("#d").remove();        
-        $("#e").remove();
-        $("#f").remove();
-        $("#g").remove();
-        $("#h").remove();
-        $("#links").remove();        
+        $("#d").remove();
         document.getElementById('1').innerHTML = response.identificador;
         document.getElementById('2').innerHTML = response.nombreSol;
         document.getElementById('3').innerHTML = response.colegio;
         document.getElementById('4').innerHTML = response.tipo;
         document.getElementById('5').innerHTML = response.cursoArea;
+        document.getElementById('ima').src = response.imagenUsuario;
 
     });
 
