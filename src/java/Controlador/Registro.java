@@ -37,7 +37,6 @@ public class Registro extends HttpServlet {
 		int i = 0;
 		while (i < longitud) {
 			char c = (char) r.nextInt(255);
-			// System.out.println("char:"+c);
 			if ((c >= '0' && c <= 9) || (c >= 'A' && c <= 'Z')) {
 				cadenaAleatoria += c;
 				i++;
