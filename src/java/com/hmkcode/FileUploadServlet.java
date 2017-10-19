@@ -141,9 +141,11 @@ public class FileUploadServlet extends HttpServlet {
                 String Curso = formatter.formatCellValue(row.getCell(3));
                 String colegio = formatter.formatCellValue(row.getCell(4));
                 String clave = "null";
+                String correo = "null";
+                String activo = "false";
                 String foto = "images/demo/customer.png";
 
-                String sql = "insert into usuarios (identificador,nombreSol,tipo,cursoArea,colegio,clave,imagen) values (?,?,?,?,?,?,?)";
+                String sql = "insert into usuarios (identificador,nombreSol,tipo,cursoArea,colegio,clave,correo,activo,imagen) values (?,?,?,?,?,?,?,?,?)";
                 statement = conexion.prepareStatement(sql);
                 statement.setString(1, identificador);
                 statement.setString(2, nombre);
@@ -151,7 +153,9 @@ public class FileUploadServlet extends HttpServlet {
                 statement.setString(4, Curso);
                 statement.setString(5, colegio);
                 statement.setString(6, clave);
-                statement.setString(7, foto);
+                statement.setString(7, correo);
+                statement.setString(8, activo);
+                statement.setString(9, foto);
                 statement.execute();
                 System.out.println("Import rows" + i);
             }

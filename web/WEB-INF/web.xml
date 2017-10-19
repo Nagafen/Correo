@@ -63,6 +63,16 @@
     <servlet-mapping>
         <servlet-name>BuscarElementoPorNombre</servlet-name>
         <url-pattern>/BuscarElementoPorNombre</url-pattern>
+    </servlet-mapping> 
+    <servlet>
+        <description/>
+        <display-name>ServletActivacionCuenta</display-name>
+        <servlet-name>ServletActivacionCuenta</servlet-name>
+        <servlet-class>Controlador.ServletActivacionCuenta</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletActivacionCuenta</servlet-name>
+        <url-pattern>/ActivacionCuenta</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

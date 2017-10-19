@@ -201,7 +201,8 @@
                     <input type="text" name="identificador" id="identificador" placeholder="Numero de identificación">
                     <input name="pwd1" id="pwd1" type="password" placeholder="Contraseña">
                     <input name="pwd2" id="pwd2" type="password" placeholder="Repita Contraseña">
-                    <button onclick="validarRegistro($('#identificador').val(), $('#pwd1').val(), $('#pwd2').val(), $('#colegio').val());" type="button" id="registrarse">REGISTRARSE</button>
+                    <input name="correo" id="correo" placeholder="Correo">
+                    <button onclick="validarRegistro($('#identificador').val(), $('#pwd1').val(), $('#pwd2').val(), $('#colegio').val(), $('#correo').val());" type="button" id="registrarse">REGISTRARSE</button>
                 </div>
                 <a class="close-btn" href="#start2"><i class=" fa fa-lg fa-times-circle"></i></a>
             </div>

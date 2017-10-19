@@ -7,13 +7,14 @@ function mostrar() {
     $(".modal").show();
 }
 
-function validarRegistro(identificador, pwd1, pwd2, colegio) {
-    if ((identificador != "") && (colegio != "") && (pwd1 != "") && (pwd2 != "")) {
+function validarRegistro(identificador, pwd1, pwd2, colegio, correo) {
+    if ((identificador != "") && (colegio != "") && (pwd1 != "") && (pwd2 != "") && (correo != "")) {
         if (pwd1 == pwd2) {
             var parametros = {
                 "identificador": identificador,
                 "colegio": colegio,
-                "pwd2": pwd2
+                "pwd2": pwd2,
+                "correo": correo
 
             };
             $.ajax({

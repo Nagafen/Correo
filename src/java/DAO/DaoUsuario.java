@@ -19,16 +19,17 @@ public class DaoUsuario {
         conexion = Util.conexion.getConnection();
     }
 
-    public ArrayList validarRegistro(String usuario, String clave, String colegio) {
+    public ArrayList validarRegistro(String usuario, String clave, String colegio, String correo) {
         ArrayList<Boolean> arr1 = new ArrayList<>();
         boolean res = false;
         boolean res2 = false;
         try {
-            String consulta = "select * from usuarios where identificador=? and colegio=? and clave='null'";
+            String consulta = "select * from usuarios where identificador=? and colegio=? and correo=? and clave='null'";
             PreparedStatement statement
                     = this.conexion.prepareStatement(consulta);
             statement.setString(1, usuario);
             statement.setString(2, colegio);
+            statement.setString(3, correo);
             ResultSet resultado = statement.executeQuery();
             while (resultado.next()) {
                 res = true;
